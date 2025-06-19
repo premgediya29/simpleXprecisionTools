@@ -41,11 +41,11 @@ export default function FeaturedSection() {
           <p className="text-gray-600 mb-6">
             We strive to fill the gap between academic and industrial research by offering precision tools...
           </p>
-          <Link to="/AboutUs">
+          <a href="#about-us">
             <button className="bg-gradient-to-b from-gray-900 to-gray-800 text-white px-6 py-3 rounded-full font-semibold flex items-center gap-2 transition-all duration-300">
               LEARN MORE ABOUT US <span className="text-xl">➔</span>
             </button>
-          </Link>
+          </a>
         </div>
       </div>
     </div>

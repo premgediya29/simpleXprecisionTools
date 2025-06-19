@@ -27,7 +27,7 @@ export default function HomePage() {
   return (
     <>
       <Nav />
-      <div className="bg-gray-800 pt-16">
+      <div className=" pt-16">
         <HomeDashboard />
         <FeaturedSection />
         <AboutUs />

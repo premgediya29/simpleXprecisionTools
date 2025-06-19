@@ -1,9 +1,20 @@
 import React from "react";
 import { Link as ScrollLink } from 'react-scroll';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 // import logo from "../../../assets/h-logo-min.png";
 
 export default function Footer() {
+
+  const navigate = useNavigate();
+
+  const goToAboutUs = () => {
+    navigate("/", { state: { scrollTo: `about-us` } });
+  };
+  const goToContactUs = () => {
+
+    console.log("contact")
+    navigate("/", { state: { scrollTo: `contact-us` } });
+  };
   return (
     <footer id="footer" className="bg-gray-700 text-white px-6 py-12">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-10">
@@ -45,10 +56,10 @@ export default function Footer() {
               <Link to="/" className="hover:text-gray-300">Home</Link>
             </li>
             <li>
-              <Link to="/#about-us" className="hover:text-gray-300">About Us</Link>
+              <p onClick={goToAboutUs} className="hover:text-gray-300 cursor-pointer">About Us</p>
             </li>
             <li>
-              <Link to="/#contact-us" className="hover:text-gray-300">Contact Us</Link>
+              <p onClick={goToContactUs} className="hover:text-gray-300 cursor-pointer">Contact Us</p>
             </li>
             <li>
               <Link to="/Products" className="hover:text-gray-300">Product</Link>
@@ -72,7 +83,7 @@ export default function Footer() {
 
       {/* Bottom Strip */}
       <div className="max-w-7xl mx-auto border-t border-gray-700 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-        <div>
+        <div> 
           &copy; {new Date().getFullYear()} simpleXprecisionTools LLP, All Rights Reserved.
         </div>
         <div className="mt-3 md:mt-0">

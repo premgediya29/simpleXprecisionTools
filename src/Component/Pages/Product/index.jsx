@@ -1,5 +1,5 @@
 import React from 'react'
-import bgImage from "../../../assets/banner-3.png";
+import bgImage from "../../../assets/bg.jpg";
 import ProductCard from "../../Ui/ProductCard";
 
 export default function index({link,img}) {

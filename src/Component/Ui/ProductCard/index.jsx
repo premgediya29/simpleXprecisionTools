@@ -11,11 +11,11 @@ import p6 from "../../../assets/screw6.jpeg";
 export default function index({Heading,link}) {
   return (
     <div className=" text-black px-6 lg:p-20 m-auto bg-white">
-      <h1 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">
+      <h1 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-4 text-center">
         {Heading}
       </h1>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 justify-items-center mb-11">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 justify-items-center ">
         <Design img={p1} link={link} />
         <Design img={p2} link={link} />
         <Design img={p3} link={link} />

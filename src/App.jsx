@@ -14,8 +14,6 @@ function App() {
       <Routes>
         <Route path="*" element={<NotFoundPage />} />
         <Route path="/" element={<HomePage />} />
-        <Route path="/AboutUs" element={<AboutUsPage />} />
-        <Route path="/ContactUs" element={<ContactUsPage />} />
         <Route path="/Products" element={<ProductPage />} />
         <Route path="/Product/:SKU" element={<ProductDescriptionPage />} />
         <Route path="/Gallery" element={<GalleryPageComponent />} />
